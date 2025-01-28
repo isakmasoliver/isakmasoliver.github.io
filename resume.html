@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumé - Isak Masoliver</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('Drawing (20).png') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+            padding: 10px 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        .content-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 60%;
+            max-width: 800px;
+            margin: 150px auto 0; /* Adjusted margin to make space for fixed header */
+        }
+        .content-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        /* CSS for the translate button */
+        .bottom-right-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 8px; /* Space between image and text */
+            text-decoration: none; /* Remove underline for the link */
+            transition: background-color 0.3s ease;
+        }
+        .bottom-right-button:hover {
+            background-color: gray;
+        }
+        .bottom-right-button img {
+            width: 20px; /* Set the image width */
+            height: 20px; /* Set the image height */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Isak Masoliver</h1>
+        <nav>
+            <a href="resume.html">Resumé</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Information</a>
+        </nav>
+    </header>
+
+    <div class="content-container">
+        <!-- Display the CV -->
+        <img src="CV 2025.png" alt="Resumé">
+    </div>
+
+    <!-- Translate to Swedish Button -->
+    <a href="swedish.html" class="bottom-right-button">
+        <img src="sweden.png" alt="Sweden Flag">
+        Translate to Swedish
+    </a>
+</body>
+</html>
