@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,11 +70,18 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 500px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
         .contact-item img {
             width: 30px;
             height: 30px;
             margin-right: 15px;
+        }
+        .contact-item:hover {
+            background-color: #e0e0e0;
+            transform: scale(1.05);
+            cursor: pointer;
         }
         /* Translate button */
         .bottom-right-button {
@@ -120,10 +126,10 @@
         <p>A desktop application that lets the user input a password, and attempts to crack the password in real time using brute force. This app illustrates the merit of secure passwords:</p>
 
         <div class="contact-list">
-            <div class="contact-item">
-                <img src="youtube.png" alt="Phone Icon">
-                <span>Video showcasing application </span>
-            </div>
+            <a href="https://www.youtube.com/watch?v=V9p7Z7WyQYU&ab_channel=IsakMasoliver" target="_blank" class="contact-item">
+                <img src="youtube.png" alt="YouTube Icon">
+                <span>Video showcasing application</span>
+            </a>
             <div class="contact-item">
                 <img src="email.png" alt="Email Icon">
                 <span>isak.masoliver@gmail.com</span>
